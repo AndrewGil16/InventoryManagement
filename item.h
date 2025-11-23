@@ -2,22 +2,23 @@
 #define ITEM_H
 #include <stdio.h>
 
-
-int currentItem;
-void saveNewItemToCSV();
-
+extern void saveNewItemToCSV();
+void createItem();
 typedef struct
 {
     char itemName[100];
+    char itemCategory[100];
+    char itemSize[10];
+    char placesListed[10];
     int skuNumber;
     int tripNumber;
-    char itemCategory[100];
     //listdate
     //sell date
     //float orderEarnings;
-    //char itemSize[10];
-    //LISTING LOCATIONS
-} Item;
+    
+} Item_t;
+extern int itemCount;
+extern Item_t stockCount[100];
 
 //load items from csv
 //save new items to csv
@@ -29,11 +30,8 @@ typedef struct {
 
 } Trips;
 
-int totalInventory;
-int command;
 
-Item newListing();
-char input[50];
+Item_t newListing();
 
 
 
