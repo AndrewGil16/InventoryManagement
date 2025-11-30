@@ -17,7 +17,7 @@ Item_t stockCount[100];
 //file currently used for individual function testing
 
 int main (void){
-    printf("Testing Function...\n");
+    printf("Testing Function...\n\n");
     initializeCSV();
     sleep(2);
     printf("Done");

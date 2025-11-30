@@ -35,7 +35,6 @@ typedef struct{
 } Inventory_t;
 
 
-//extern struct Inventory_t currentInventory[100];
 extern int itemCount;
 
 
